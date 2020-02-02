@@ -1,0 +1,4 @@
+AuthUserFile /home3/biernaca/public_html/AssignmentFour/.htpasswd
+AuthType Basic
+AuthName "LOGIN"
+Require valid-user

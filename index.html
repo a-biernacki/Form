@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- 
+    Programmer: Arianna Biernacki
+    Student Number: 991270882
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet "type="text/css" href="CSS/Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Arianna Biernacki</title>
+</head>
+<body>
+    <form name="details">
+        <div id="parent">
+                <div id="header"><h1>Assignment 4</h1><h1>Arianna Biernacki</h1><h1>Student #: 991270882</h1></div>
+                <div id="personal">
+                    <div class="wrapper">
+                        <div class="setLabel">
+                            <label class="mainLabel">Name:</label>
+                            <div class="inputWrapper">
+                                <div class="labelWrapper">
+                                    <input type="text" name="lastName" value="Biernacki" autofocus required>
+                                    <figcaption>Last Name<p class="required"> *</p></figcaption>
+                                </div>
+                                <div class="labelWrapper">
+                                    <input type="text" name="firstName" value="Arianna" required>
+                                    <figcaption>First Name<p class="required"> *</p></figcaption>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="setbottomLabel">
+                                <label class="mainLabel">Information:</label>
+                                <div class="inputWrapper">
+                                    <div class="labelWrapper">
+                                        <input type="number" name="studentNum" maxlength="9" value="991270882">
+                                        <figcaption>Student Number</figcaption>
+                                    </div>
+                                    <div class="labelWrapper">
+                                        <input type="email" name="email" value="biernaca@shericancollege.ca">
+                                        <figcaption>Email Address</figcaption>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <section id="sheridan">
+                        <div class="sheridanWrapper">
+                            <div class="setsheridanLabel">
+                                <label class="middleLabel">Sheridan Experience</label>
+                                <div class=inputSheridanWrapper>
+                                    <div class="wrapFirstMiddleLabel">
+                                        <input type="date" name="startDate" value="2019-09-03">
+                                        <figcaption>Start Date</figcaption>
+                                    </div>
+                                    <div class="setsheridanLabel">
+                                        <div class="wrapSheridanMiddleLabel">
+                                            <input type="number" name="yrsPostSec" placeholder="0">
+                                            <figcaption>Previous Years of Post-Secondary Experience:</figcaption>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="sheridanWrapper">
+                                    <div class="setsheridanLabel">
+                                        <label class="buttonBox">Campus:</label>
+                                        <div class="button">
+                                            <div class=singleButton>
+                                                <input type="radio" name="campus" value="Davis" checked><p class="buttonText">Davis</p>
+                                            </div>
+                                            <div class=singleButton>
+                                                <input type="radio" name="campus" value="HMC"><p class="buttonText">HMC</p>
+                                            </div>
+                                            <div class=singleButton>
+                                                <input type="radio" name="campus" value="Trafalgar"><p class="buttonText">Trafalgar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                </section>
+                <aside id="financial">
+                    <div class="sheridanWrapper">
+                        <div class="setsheridanLabel">
+                            <label class="middleLabel">Financial information</label>
+                            <div class="wrapMiddleLabel">
+                                <div class="wrapIcon">
+                                    <i class="fa fa-dollar"></i>
+                                    <input type="number" name="moneyReceived">
+                                </div>
+                                <figcaption>Amount of Money Received:</figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sheridanWrapper">
+                        <div class="setMoneyButtonLabel">
+                            <label class="buttonBox">Money Source:</label>
+                            <div class="button">
+                                <div class="buttonGroup">
+                                    <div class=singleButton>
+                                        <input type="checkbox" name="moneySource" value="Scholarship"><p class="buttonText">Scholarship</p>
+                                    </div>
+                                    <div class=singleButton>
+                                        <input type="checkbox" name="moneySource" value="RESP"><p class="buttonText">RESP</p>
+                                    </div>
+                                </div>
+                                <div class="buttonGroup">
+                                    <div class=singleButton>
+                                        <input type="checkbox" name="moneySource" value="Bursary"><p class="buttonText">Bursary</p>
+                                    </div>
+                                    <div class=singleButton>
+                                        <input type="checkbox" name="moneySource" value="OSAP"><p class="buttonText">OSAP</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <div id="comment">
+                    <div class="commentWrapper">
+                        <label id="commentLabel">Comments</label>
+                        <textarea name="message" placeholder="Enter comments here"></textarea>
+                    </div>
+                </div>
+                <div id="submit">
+                    <div id="bottomButtons">
+
+                        <input type="submit">
+                        <input type="button" value="Click Me!" onclick="popUp();">
+                        <input type="reset">
+                    </div>
+                </div>
+            </form>
+    </div>
+    <script>
+        function popUp(){
+            var firstName=document.details.firstName.value;
+            var lastName=document.details.lastName.value;
+            var studentNum=document.details.studentNum.value;
+            alert("First Name: "+firstName+"     "+" Last Name: "+lastName+"     "+" Student #: "+studentNum);
+        }
+    </script>
+</body>
+</html>
